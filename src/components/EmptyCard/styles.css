@@ -1,0 +1,55 @@
+:root {
+  --color-secondary: #03b898;
+  --grey-1: #f8f9fa;
+  --grey-2: #e9ecef;
+  --grey-3: #5b6166;
+  --grey-4: #212529;
+  --font-nunito: Nunito;
+}
+
+.emptyList {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 560px;
+  height: 87px;
+  margin: 13px 24.5px;
+  font-family: var(--font-nunito);
+  background-color: var(--grey-1);
+  border-radius: 8px;
+  position: relative;
+}
+
+.noData {
+  color: var(--grey-3);
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  width: fit-content;
+  margin-left: 25px;
+}
+
+.div1 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: var(--grey-2);
+  width: 200px;
+  min-height: 15px;
+}
+
+.div2 {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background-color: var(--grey-2);
+  width: 75px;
+  min-height: 15px;
+}
+
+@media screen and (min-width: 600px) {
+  .emptyList {
+    width: 90%;
+  }
+}

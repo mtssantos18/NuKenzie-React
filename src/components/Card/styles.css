@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+
+:root {
+  --color-secondary: #03b898;
+  --grey-1: #f8f9fa;
+  --grey-2: #e9ecef;
+  --grey-3: #5b6166;
+  --grey-4: #212529;
+  --font-nunito: Nunito;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 560px;
+  height: 87px;
+  margin: 13px 24.5px;
+  font-family: var(--font-nunito);
+  background-color: var(--grey-1);
+  border-radius: 8px;
+}
+
+.cardDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin-left: 14px;
+}
+
+.description {
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--grey-4);
+}
+
+.price {
+  color: var(--grey-4);
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.type {
+  color: var(--grey-3);
+  font-weight: 400;
+  font-size: 12px;
+  margin-left: 14px;
+}
+
+.removeBtn {
+  background-color: var(--grey-2);
+  border: none;
+  border-radius: 2.5px;
+  width: 22px;
+  height: 22px;
+  margin-right: 13px;
+}
+
+.removeBtn:hover {
+  background-color: var(--grey-3);
+}
+
+@media screen and (min-width: 600px) {
+  .card {
+    width: 90%;
+  }
+}

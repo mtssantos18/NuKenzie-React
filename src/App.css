@@ -1,0 +1,32 @@
+body {
+  background-color: white;
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 100vw;
+}
+
+.getInformation {
+  width: 80%;
+  max-width: 330px;
+}
+
+.showInformation {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 600px) {
+  .container {
+    flex-flow: row nowrap;
+  }
+
+  .showInformation {
+    width: 60%;
+  }
+}

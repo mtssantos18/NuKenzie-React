@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;800&display=swap");
+
+:root {
+  --color-primary: #fd377e;
+  --color-primary-2: #e34981;
+  --grey-4: #212529;
+  --white: #ffffff;
+  --font-nunito: Nunito;
+}
+
+.containerStart {
+  background-color: var(--grey-4);
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  font-family: var(--font-nunito);
+}
+
+.firstSec {
+  position: absolute;
+  top: 5vh;
+  left: 10%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  align-items: flex-start;
+}
+
+.initialText {
+  font-size: 38px;
+  font-weight: 800;
+  color: var(--white);
+}
+
+.smallText {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--white);
+}
+
+.firstSec button {
+  width: 241px;
+  height: 48px;
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--white);
+  background-color: var(--color-primary);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.firstSec button:hover {
+  background-color: var(--color-primary-2);
+}
+
+.imgSec {
+  position: absolute;
+  top: 50vh;
+  left: 5%;
+}
+
+.bgImg {
+  width: 300px;
+}
+
+@media screen and (min-width: 600px) {
+  .firstSec {
+    max-width: 350px;
+    top: 35%;
+    left: 5%;
+  }
+
+  .imgSec {
+    top: 28%;
+    left: 50%;
+  }
+
+  .bgImg {
+    width: 360px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .firstSec {
+    max-width: 350px;
+    top: 35%;
+    left: 15%;
+  }
+
+  .imgSec {
+    top: 20%;
+    left: 50%;
+  }
+
+  .bgImg {
+    width: 500px;
+  }
+}

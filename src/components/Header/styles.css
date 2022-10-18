@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
+
+:root {
+  --color-primary: #fd377e;
+  --grey-1: #f8f9fa;
+  --grey-2: #e9ecef;
+  --grey-3: #5b6166;
+  --grey-4: #212529;
+  --font-nunito: Nunito;
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  height: 88px;
+  background-color: var(--grey-1);
+}
+
+.navBar button {
+  background-color: var(--grey-2);
+  border: none;
+  border-radius: 8px;
+  color: var(--grey-3);
+  width: 64px;
+  height: 40px;
+  font-family: var(--font-nunito);
+  cursor: pointer;
+}
+
+.navBar button:hover {
+  background-color: var(--color-primary);
+}

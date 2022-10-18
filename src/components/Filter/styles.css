@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
+
+:root {
+  --color-primary: #fd377e;
+  --color-primary-2: #e064cc;
+  --grey-0: #f8f9fa;
+  --grey-2: #e9ecef;
+  --grey-3: #5b6166;
+  --grey-4: #212529;
+  --grey-50: #868e96;
+  --grey-100: #212529;
+  --font-nunito: Nunito;
+  --white: #ffffff;
+}
+
+.filterDiv {
+  font-family: var(--font-nunito);
+  margin-top: 38px;
+  width: 100%;
+  max-width: 560px;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: var(--grey-0);
+  border-radius: 8px;
+}
+
+.title {
+  color: var(--grey-4);
+  font-weight: 700;
+  font-size: 16px;
+  margin-top: 15px;
+  margin-left: 24px;
+}
+
+.buttonsDiv {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-right: 10px;
+}
+
+.buttonsDiv button {
+  background-color: var(--grey-2);
+  border: none;
+  border-radius: 8px;
+  width: 72px;
+  height: 40px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.buttonsDiv button:hover {
+  background-color: var(--color-primary-2);
+}
+
+@media screen and (min-width: 600px) {
+  .filterDiv {
+    width: 90%;
+  }
+}

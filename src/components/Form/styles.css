@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
+
+:root {
+  --color-primary: #fd377e;
+  --color-primary-2: #e064cc;
+  --grey-0: #f8f9fa;
+  --grey-2: #e9ecef;
+  --grey-3: #5b6166;
+  --grey-4: #212529;
+  --grey-50: #868e96;
+  --grey-100: #212529;
+  --font-inter: Inter;
+  --white: #ffffff;
+}
+
+#getEvent {
+  width: 100%;
+  max-width: 363px;
+  height: 351px;
+  margin-top: 38px;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+  font-family: var(--font-inter);
+  border: 1px solid var(--grey-2);
+  border-radius: 8px;
+  background-color: var(--grey-0);
+}
+
+.fontStyle {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--grey-100);
+  font-family: var(--font-inter);
+}
+
+.formDescription {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 314px;
+  margin: 0px 24.5px;
+  margin-top: 30px;
+}
+
+.descriptionValue {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.formDescription input {
+  border: none;
+  background-color: var(--grey-2);
+  border-radius: 5px;
+  height: 52px;
+}
+
+.descriptionValue input:focus {
+  border: 1.2px solid var(--grey-4);
+  color: var(--grey-4);
+}
+
+small {
+  color: var(--grey-50);
+  font-weight: 400;
+  font-size: 12px;
+}
+.valuesDiv {
+  position: relative;
+  margin: 0 24.5px;
+  margin-top: 20px;
+  max-width: 314px;
+  height: 56px;
+}
+
+.fieldValue {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  left: 1px;
+  top: 1px;
+}
+
+.fieldValue input {
+  border: none;
+  background-color: var(--grey-2);
+  border-radius: 5px;
+  width: 70%;
+  max-width: 128px;
+  height: 38px;
+}
+
+.fieldSelect {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  right: 1px;
+  top: 1px;
+}
+
+.fieldSelect select {
+  border: none;
+  background-color: var(--grey-2);
+  border-radius: 5px;
+  width: 100%;
+  height: 40px;
+  width: 100%;
+  max-width: 150px;
+  color: var(--grey-50);
+}
+
+.fieldSelect select option {
+  border: none;
+  background-color: var(--grey-2);
+}
+
+input::placeholder {
+  color: var(--grey-50);
+}
+
+#formBtn {
+  max-width: 314px;
+  height: 48px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--color-primary);
+  color: var(--white);
+  font-family: var(--font-inter);
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0 24.5px;
+  margin-top: 25px;
+  cursor: pointer;
+}
+
+#formBtn:hover {
+  background-color: var(--color-primary-2);
+}
